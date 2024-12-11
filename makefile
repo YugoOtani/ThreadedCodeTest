@@ -1,8 +1,8 @@
 baseline: baseline.cpp
 	g++ -g -O0 -std=c++17 -o baseline baseline.cpp
 
-threaded: threaded.cpp
-	g++ -g -O0 -std=c++17 -o threaded threaded.cpp
+token: token.cpp
+	g++ -g -O0 -std=c++17 -o token token.cpp
 
 call: call.s call_exec.s
 	g++ -g -O0 -std=c++17 -o call call.s call_exec.s
