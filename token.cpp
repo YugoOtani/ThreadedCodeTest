@@ -96,10 +96,7 @@ int main(int argc, char *argv[])
     while (std::getline(infile, line))
         bytecode.push_back(std::stoi(line));
     infile.close();
-    for (int i = 0; i < 1000; i++)
-    {
-        exec(bytecode);
-        ed = clock();
-        std::cout << ed - st << std::endl;
-    }
+    exec(bytecode);
+    ed = clock();
+    std::cout << ed - st << std::endl;
 }

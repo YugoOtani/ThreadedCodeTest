@@ -83,9 +83,6 @@ void exec()
 }
 int main(void)
 {
-    for (int i = 0; i < 1000; i++)
-    {
-        exec();
-        std::cout << ed - st << std::endl;
-    }
+    exec();
+    std::cout << ed - st << std::endl;
 }
