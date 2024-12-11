@@ -1,0 +1,12 @@
+*.dSYM
+.vscode
+.antlr
+*.s
+*.txt
+
+bytecode
+baseline
+gen_call_asm
+threaded
+call 
+main
