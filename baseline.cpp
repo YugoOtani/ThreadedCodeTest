@@ -3,7 +3,7 @@
 #include <iostream>
 #include <fstream>
 
-int *sp, stack[100], result;
+int *sp, stack[100], result, iserr;
 clock_t st, ed;
 unsigned char *pc;
 std::string input_path = "bytecode/bytecode.txt";
@@ -65,6 +65,7 @@ void exec(std::vector<unsigned char> bytecode)
             break;
         case Insn::RETURN:
             result = sp[-1];
+            iserr = false;
             return;
         default:
             return;
